@@ -1,21 +1,20 @@
-
 import profilPicture from '../ressources/mdy.jpg';
 
-function Presentation() {
+function Home() {
    return (
-     <div className= "profil">
-      <div className= "head">
+     <div className= "presentation_container">
+      <div className= "presentation_head">
          <h1>Mandy Thorel</h1>
          <h2>Développeuse Frontend</h2>
       </div>
-      <div className= "group-presentation">
-         <div className= "group-icon+photo">
-            <img className= "img-photo" src= {profilPicture} alt= "profil developer mandy thorel" />
+      <div className= "presentation">
+         <div className= "presentation_Photo+Icon">
+            <img className= "presentation_photo" src= {profilPicture} alt= "profil developer mandy thorel" />
             <p>1</p>
             <p>2</p>
             <p>3</p>
          </div>
-         <div className= "presentation">
+         <div className= "presentation_txt">
             <p>1. import <span style={{color: "#CC00C1"}}>Présentation</span> from <span style={{color: "#FF4E07"}}>'Mandy.Thorel'</span>;
             <br></br>2.<br></br>
             3. &lt;Présentation&gt; <br></br>
@@ -37,5 +36,5 @@ function Presentation() {
    );
  }
  
- export default Presentation;
+ export default Home;
  
