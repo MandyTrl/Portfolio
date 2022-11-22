@@ -6,16 +6,19 @@ body {
   margin: 0 auto;
   background-color: #FFFBF5;
   font-family: 'Urbanist', sans-serif;
+  cursor: url('./ArrowPixL.png'), pointer;
 }
 
 h1 {
- font-size: 3em;
+ font-size: 4em;
  font-weight: 700;
  color: #170F70;
+ margin-bottom: -0.5em;
+ padding-left: 4em;
 }
 h2 {
-  font-size: 2em;
-  font-weight: 200;
+  font-size: 2.6em;
+  font-weight: 300;
   color: #FF4E07;
 }
 
@@ -27,7 +30,7 @@ h2 {
   justify-content: flex-end;
   gap: 0.5em;
   color: #170F70;
-  font-size: 1.3em;
+  font-size: 1.8em;
   font-weight: 300;
   margin: 17px 15px 0 0;
 }
@@ -46,29 +49,57 @@ h2 {
 
 /*        [ HOME COMPONENT ]        */
 .presentation_container {
-  width: 60%;
   margin: 0 auto;
-}
-.presentation_head h2 {
-  padding-left: 5.2em;
 }
 .presentation {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
 }
-.presentation_txt {
+.presentation_head h2 {
+  padding-left: 12.6em;
+}
+.presentation_description {
   font-family: 'Anonymous Pro', monospace;
   text-align: justify;
   background-color: #EEDCCC;
-  /* width: 43%; */
+  width: fit-content;
+  height: fit-content;
   border-radius: 25px;
   padding: 8px 18px;
+  margin-top: -1em;
   color: #5810A5;
 }
 .presentation_photo {
-  width: 35%;
+  width: 15em;
   clip-path: ellipse(50% 39%);
+  position: relative;
+  bottom: 6em;
+  left: 7em;
+}
+.iconL, .iconM, .iconG {
+  width: 3em;
+  transition: all 0.4s ease;
+}
+.iconL:hover , .iconM:hover , .iconG:hover {
+  width: 3em;
+  transform: scale(1.15);
+}
+.iconL {
+  position: relative;
+  bottom: 10em;
+  right: 11em;
+}
+.iconM {
+  position: relative;
+  bottom: 7em;
+  right: 12em;
+}
+.iconG {
+  position: relative;
+  bottom: 5em;
+  right: 12em;
 }
 
 /*        [ CONTACT COMPONENT ]        */
@@ -82,6 +113,7 @@ input::placeholder {
   text-transform: uppercase;
   font-style: italic;
   font-weight: 1.5em;
+  caret-color: red;
 }
 textarea::placeholder {
   color: rgb(23, 15, 112, 0.4);

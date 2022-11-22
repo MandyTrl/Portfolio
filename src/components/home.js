@@ -1,4 +1,7 @@
 import profilPicture from '../ressources/mdy.jpg';
+import iconLinkedIn from '../ressources/LinkIcon.png';
+import iconMail from '../ressources/MailIcon.png';
+import iconGit from '../ressources/GitIcon.png';
 
 function Home() {
    return (
@@ -8,13 +11,19 @@ function Home() {
          <h2>Développeuse Frontend</h2>
       </div>
       <div className= "presentation">
-         <div className= "presentation_Photo+Icon">
-            <img className= "presentation_photo" src= {profilPicture} alt= "profil developer mandy thorel" />
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
+         <div className= "presentation_groupImg">
+         <img className= "presentation_photo" src= {profilPicture} alt= "profil developer mandy thorel" />
+         <a href="https://www.linkedin.com/in/mandy-thorel/">
+            <img className= "iconL" src= {iconLinkedIn} target= "_blank" alt= "icon social media linkedin pixel" />
+         </a>
+         <a href="mailto:tjorelmandy@gmail.com">
+            <img className= "iconM" src= {iconMail} target= "_blank" alt= "icon contact mail pixel" />
+         </a>
+         <a href="https://github.com/MandyTrl">
+            <img className= "iconG" src= {iconGit} target= "_blank" alt= "icon social media git pixel" />
+         </a>
          </div>
-         <div className= "presentation_txt">
+         <div className= "presentation_description">
             <p>1. import <span style={{color: "#CC00C1"}}>Présentation</span> from <span style={{color: "#FF4E07"}}>'Mandy.Thorel'</span>;
             <br></br>2.<br></br>
             3. &lt;Présentation&gt; <br></br>
@@ -30,7 +39,7 @@ function Home() {
          </div>
       </div>
       <div>
-         <p style= {{fontSize: "1.3em", textTransform: "italic"}}><span style={{color: "#CC00C1"}}>Bienvenue</span> sur mon site !</p>
+         <p style= {{fontSize: "1.3em", fontStyle: "italic", textAlign: "right"}}><span style={{color: "#CC00C1"}}>Bienvenue</span> sur mon site !</p>
       </div>
      </div>
    );
