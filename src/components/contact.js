@@ -1,4 +1,4 @@
-import TRex from '../ressources/trex.png';
+import TRex from '../ressources/TRex.png';
 
 function Contact () {
    return (

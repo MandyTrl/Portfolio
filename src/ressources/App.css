@@ -32,7 +32,7 @@ h2 {
   color: #170F70;
   font-size: 1.8em;
   font-weight: 300;
-  margin: 17px 15px 0 0;
+  margin: 20px 15px 0 0;
 }
 .navbar_container :link {
   text-decoration: none;
@@ -102,25 +102,19 @@ h2 {
   right: 12em;
 }
 
+
 /*        [ CONTACT COMPONENT ]        */
 form {
   display: flex;
   flex-direction: column;
 }
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: rgb(23, 15, 112, 0.4);
   letter-spacing: 0.13em;
   text-transform: uppercase;
   font-style: italic;
   font-weight: 1.5em;
   caret-color: red;
-}
-textarea::placeholder {
-  color: rgb(23, 15, 112, 0.4);
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 1.5em;
 }
 input, textarea {
   background-color: #FFFBF5;
@@ -131,31 +125,41 @@ input, textarea {
   height: 3em;
   padding: 8px 0 8px 14px;
   margin-bottom: 15px;
+  outline: none;
+  resize: none;
+}
+textarea {
+  height: 10em;
 }
 button {
   border-radius: 0 0 25px 25px;
   border: none;
-  box-sizing: border-box;
   background-color: #170F70;
   color: #EEDCCC;
-  font-weight: 500;
+  font-weight: 530;
+  font-size: 1.1em;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  font-weight: 1.6em;
-  padding: 12px 0;
+  padding: 1em 0;
+  width: 110.1%;
+  position: relative;
+  bottom: 5.8em;
+  right: 2.75em;
 }
 .contact {
-  margin: 2% auto;
+  margin: 2.5% auto;
   background-color: #EEDCCC;
   border-radius: 25px;
-  width: 70%;
+  width: 60em;
+  height: 22em;
   padding: 3em;
   box-shadow: 0px 4px 12px rgba(23, 15, 112, 0.82);
 }
 .Trex {
   width: 8em;
-  transform: scaleX(-1);
-  opacity: 50%;
+  position: relative;
+  bottom: 8.8em;
+  left: 50em;
 }
 
 /*        [ FOOTER ]        */
