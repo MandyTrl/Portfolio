@@ -2,7 +2,7 @@ function Footer () {
    
 //       [ STYLES ]        //
    const style = {
-      fontSize: "0.8em",
+      fontSize: "0.9em",
       fontStyle: "italic",
       fontFamily:" Anonymous Pro, monospace",
       textTransform: "capitalize",
