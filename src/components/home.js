@@ -1,7 +1,7 @@
-import profilPicture from '../ressources/mdy.jpg';
-import iconLinkedIn from '../ressources/LinkIcon.png';
-import iconMail from '../ressources/MailIcon.png';
-import iconGit from '../ressources/GitIcon.png';
+import profilPicture from '../ressources/mdy.jpg'
+import iconLinkedIn from '../ressources/LinkIcon.png'
+import iconMail from '../ressources/MailIcon.png'
+import iconGit from '../ressources/GitIcon.png'
 // import Contact from  './contact';
 
 function Home() {

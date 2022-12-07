@@ -1,21 +1,24 @@
-import Footer from './footer';
-import iconGit from '../ressources/GitIcon.png';
-import Api from '../api/datas'
-import React, { useEffect, useState } from 'react';
+import Footer from './footer'
+import iconGit from '../ressources/GitIcon.png'
+import React, { useEffect, useState } from 'react'
 
 function Projects () {
-   const [datas, setDatas] = useState([]);
+   const [datas, setDatas] = useState([])
    
-   useEffect(() => {
-      async function fetchData(){
-        let rawResponse = await fetch(Api)
-        let response = await rawResponse.json();
-        setDatas(response);
-      }
-    fetchData();
-    }, []);
+ useEffect(() => {
+   const loadData = async () => {
+      const response = await fetch('../api/datas')
+      // const projects = await response.json()
+      console.log("Test ::  ", response)
+      setDatas(response)
+   }
 
-   console.log("données:: ", datas);
+   loadData()
+
+ }, [])
+
+    console.log("Datas:: ", datas)
+
 
    return (
       <div className= "projects">
